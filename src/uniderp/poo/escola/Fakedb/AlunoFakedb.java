@@ -9,7 +9,7 @@ public class AlunoFakedb extends BaseFakedb<Aluno> {
 
     @Override
     protected void CarregarDados() {
-        this.tabela.add(new Aluno(0, "null") );
+        this.tabela.add(new Aluno(0, null, null, null, null, 0));
         
     }
 

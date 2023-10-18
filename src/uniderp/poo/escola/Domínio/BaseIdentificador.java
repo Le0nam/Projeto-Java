@@ -1,10 +1,7 @@
 package uniderp.poo.escola.Domínio;
 
-import java.time.LocalDate;
-
 public abstract class BaseIdentificador {
     protected int codigo;
-    private LocalDate data;
 
     public int getCodigo() {
         return codigo;

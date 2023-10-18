@@ -1,20 +1,21 @@
 package uniderp.poo.escola.Domínio;
 
-public class Aluno extends BaseIdentificador{
+import java.time.LocalDate;
+
+public class Aluno extends BasePessoa{
     
-    protected String seila;
+    private int periodo;
 
-    public String getSeila() {
-        return seila;
+    public int getPeriodo() {
+        return periodo;
     }
 
-    public void setSeila(String seila) {
-        this.seila = seila;
+    public void setPeriodo(int periodo) {
+        this.periodo = periodo;
     }
 
-    public Aluno(int codigo, String seila) {
-        super(codigo);
-        this.seila = seila;
-    }
-
+    public Aluno(int codigo, String nome, String nomeUsuario, String senha, LocalDate dataNascimento, int periodo) {
+        super(codigo, nome, nomeUsuario, senha, dataNascimento);
+        this.periodo = periodo;
+    }  
 }
