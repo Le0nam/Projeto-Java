@@ -2,26 +2,21 @@ package uniderp.poo.escola.Domínio;
 
 import java.time.LocalDate;
 
-public class Professor extends BaseIdentificador {
+public class Professor extends BasePessoa {
+    private String cargo;
 
-    public String usuario;
-    public String senha;
-    public String getUsuario() {
-        return usuario;
+    public String getCargo() {
+        return cargo;
     }
-    public void setUsuario(String usuario) {
-        this.usuario = usuario;
+
+    public void setCargo(String cargo) {
+        this.cargo = cargo;
     }
-    public String getSenha() {
-        return senha;
+
+    public Professor(int codigo, String nome, LocalDate dataNascimento, String nomeUsuario, String senha,
+            String cargo) {
+        super(codigo, nome, dataNascimento, nomeUsuario, senha);
+        this.cargo = cargo;
     }
-    public void setSenha(String senha) {
-        this.senha = senha;
-    }
-    
-    public Professor(int codigo, String usuario, String senha) {
-        super(codigo);
-        this.usuario = usuario;
-        this.senha = senha;
-    }
+
 }
