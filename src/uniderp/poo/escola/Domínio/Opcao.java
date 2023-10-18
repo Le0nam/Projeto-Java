@@ -3,7 +3,7 @@ package uniderp.poo.escola.Domínio;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Exemplo{
+public class Opcao{
     protected ArrayList <Integer> lista;
     protected Scanner scan;
 
@@ -12,7 +12,7 @@ public class Exemplo{
         this.scan = new Scanner (System.in); 
     }
 
-    public Exemplo()
+    public Opcao()
     {
     
     int continuar = 99;
