@@ -4,16 +4,18 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 
 import uniderp.poo.escola.Domínio.Aluno;
+import uniderp.poo.escola.Domínio.Trabalho;
 
-public class AlunoFakedb extends BaseFakedb<Aluno> {
+public class TrabalhoFakedb extends BaseFakedb<Trabalho> {
 
     @Override
     protected void CarregarDados() {
-        this.tabela = new ArrayList<Aluno>();
+        this.tabela.add(new Trabalho(0, 0, null, null));
+        ;
 
     }
 
-    public AlunoFakedb() {
+    public TrabalhoFakedb() {
         super();
     }
 }

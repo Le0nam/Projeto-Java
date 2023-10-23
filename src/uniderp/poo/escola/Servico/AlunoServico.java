@@ -7,7 +7,7 @@ import uniderp.poo.escola.Repositorio.AlunoRepositorio;
 
 public class AlunoServico extends BaseGenericaServico<AlunoRepositorio, Aluno> {
 
-    public AlunoServico(){
+    public AlunoServico() {
         this.repo = new AlunoRepositorio();
     }
 
@@ -34,5 +34,5 @@ public class AlunoServico extends BaseGenericaServico<AlunoRepositorio, Aluno> {
     @Override
     public Aluno Excluir(int codigo) {
         return this.repo.Delete(codigo);
-    }    
+    }
 }

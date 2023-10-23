@@ -2,27 +2,31 @@ package uniderp.poo.escola.Domínio;
 
 import java.time.LocalDate;
 
-public abstract class BasePessoa extends BaseNome{
+public abstract class BasePessoa extends BaseNome {
     protected LocalDate dataNascimento;
     protected String nomeUsuario;
     protected String senha;
 
-
     public LocalDate getDataNascimento() {
         return dataNascimento;
     }
+
     public void setDataNascimento(LocalDate dataNascimento) {
         this.dataNascimento = dataNascimento;
     }
+
     public String getNomeUsuario() {
         return nomeUsuario;
     }
+
     public void setNomeUsuario(String nomeUsuario) {
         this.nomeUsuario = nomeUsuario;
     }
+
     public String getSenha() {
         return senha;
     }
+
     public void setSenha(String senha) {
         this.senha = senha;
     }
@@ -33,6 +37,5 @@ public abstract class BasePessoa extends BaseNome{
         this.nomeUsuario = nomeUsuario;
         this.senha = senha;
     }
-    
 
 }

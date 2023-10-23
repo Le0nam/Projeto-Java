@@ -3,7 +3,7 @@ package uniderp.poo.escola.Servico;
 import java.util.ArrayList;
 
 public abstract class BaseGenericaServico<TRepo, TDom> {
-    
+
     protected TRepo repo;
 
     public abstract TDom Inserir(TDom tupla);
@@ -16,5 +16,6 @@ public abstract class BaseGenericaServico<TRepo, TDom> {
 
     public abstract TDom Excluir(int codigo);
 
-    public BaseGenericaServico(){}
+    public BaseGenericaServico() {
+    }
 }

@@ -6,7 +6,7 @@ public abstract class BaseGenericaCRUD<TFakeDB, TDom> {
 
     protected TFakeDB db;
 
-     protected ArrayList<TDom> dataset;
+    protected ArrayList<TDom> dataset;
 
     public abstract TDom Create(TDom instancia);
 

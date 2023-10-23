@@ -3,11 +3,11 @@ package uniderp.poo.escola.Fakedb;
 import java.util.ArrayList;
 
 public abstract class BaseFakedb<TDom> {
-    
+
     protected ArrayList<TDom> tabela;
 
     public ArrayList<TDom> getTabela() {
-        if (this.tabela == null){
+        if (this.tabela == null) {
             this.tabela = new ArrayList<TDom>();
         }
         return this.tabela;
@@ -15,7 +15,7 @@ public abstract class BaseFakedb<TDom> {
 
     protected abstract void CarregarDados();
 
-    public BaseFakedb(){
+    public BaseFakedb() {
         this.tabela = new ArrayList<TDom>();
         this.CarregarDados();
     }

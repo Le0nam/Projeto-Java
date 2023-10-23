@@ -1,6 +1,6 @@
 package uniderp.poo.escola.Domínio;
 
-public abstract class BaseNome extends BaseIdentificador{
+public abstract class BaseNome extends BaseIdentificador {
     protected String nome;
 
     public String getNome() {
@@ -14,5 +14,5 @@ public abstract class BaseNome extends BaseIdentificador{
     public BaseNome(int codigo, String nome) {
         super(codigo);
         this.nome = nome;
-    }  
+    }
 }

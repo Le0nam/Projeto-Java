@@ -1,9 +1,8 @@
 package uniderp.poo.escola.Domínio;
 
-public class Disciplina extends BaseNome{
+public class Disciplina extends BaseNome {
     private String ementa;
 
-    
     public String getEmenta() {
         return ementa;
     }

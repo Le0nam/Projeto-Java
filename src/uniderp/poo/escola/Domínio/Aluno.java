@@ -2,8 +2,8 @@ package uniderp.poo.escola.Domínio;
 
 import java.time.LocalDate;
 
-public class Aluno extends BasePessoa{
-    
+public class Aluno extends BasePessoa {
+
     private int periodo;
 
     public int getPeriodo() {
@@ -17,5 +17,5 @@ public class Aluno extends BasePessoa{
     public Aluno(int codigo, String nome, String nomeUsuario, String senha, LocalDate dataNascimento, int periodo) {
         super(codigo, nome, dataNascimento, nomeUsuario, senha);
         this.periodo = periodo;
-    }  
+    }
 }
